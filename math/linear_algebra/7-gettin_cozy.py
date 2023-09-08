@@ -12,6 +12,9 @@ def cat_matrices2D(mat1, mat2, axis=0):
     to end of each dimension 1 entry of mat1
     """
 
+    if isinstance(mat1, list) is not True or\
+    isinstance(mat2, list) is not True:
+        return None
     catArr = []
     catRow = []
     if axis == 0:
