@@ -10,4 +10,9 @@ def add_arrays(arr1, arr2):
 
     sumMatrix = []
 
+    if len(arr1) != len(arr2):
+        return None
+
+    for column in range(len(arr1)):
+        sumMatrix.append(arr1[column] + arr2[column])
     return sumMatrix
