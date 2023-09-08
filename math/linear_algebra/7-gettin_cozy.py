@@ -17,6 +17,8 @@ def cat_matrices2D(mat1, mat2, axis=0):
     if axis == 0:
         catArr = mat1 + mat2
     elif axis == 1:
+        if len(mat1) != len(mat2):
+            return None
         for row in range(len(mat1)):
             catRow = mat1[row] + mat2[row]
             catArr.append(catRow)
