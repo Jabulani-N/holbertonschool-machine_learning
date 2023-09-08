@@ -3,6 +3,7 @@
 **Be sure you give your python files appropriate permissions**
 
  * [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls)
+ * icacls didn't seem to work with the necessary permission, so I used `git add --chmod=+x *.py` to add the permission while adding the file.
 
 Installing Ubuntu 16.04 and Python 3.5
 
