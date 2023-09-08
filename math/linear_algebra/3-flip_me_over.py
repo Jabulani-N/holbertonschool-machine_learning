@@ -13,3 +13,11 @@ def matrix_transpose(matrix):
     1,3,5
     """
 
+    transMatrix = []
+    transRow = []
+    for column in range(len(matrix[0])):
+        for row in matrix:
+            transRow.append(row[column])
+        transMatrix.append(transRow)
+        transRow = []
+    return transMatrix
