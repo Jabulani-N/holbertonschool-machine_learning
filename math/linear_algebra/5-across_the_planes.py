@@ -17,7 +17,7 @@ def add_matrices2D(mat1, mat2):
     sumMatrix = []
     sumRow = []
 
-    # I might start replacing terms row, column
+    # Consider replacing terms row, column
     # with terms dimensiton 1, dimension2
     # so higher dimensions will come naturally
     for row in range(len(mat1)):
