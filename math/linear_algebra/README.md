@@ -41,3 +41,15 @@ array slicing: https://numpy.org/doc/stable/user/basics.indexing.html
   * for example, -2 means "number 2 from end." **-1 means "number at end."**
   * `[-3:-1]` means "number 3 from end until number 1 from end(last number)"
 
+### task3: transpose
+
+matrix transpose: https://en.wikipedia.org/wiki/Transpose
+
+changes the horizontal of a matrix to horizontal, and vice versa.
+For example:
+    0,1
+    2,3
+    4,5
+becomes
+    0,2,4
+    1,3,5
