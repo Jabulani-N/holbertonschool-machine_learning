@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+"""this module coantains the matrix_shape function"""
 
 def matrix_shape(matrix):
     """ determines matrix shape.
-    Shape meaning it's length, and thength of internal arrays,"""
+    Shape meaning it's length,
+    and length of internal arrays,
+    recursively
+    """
     thisDim = 0
     thisDepth = matrix
     shape_so_far = []
