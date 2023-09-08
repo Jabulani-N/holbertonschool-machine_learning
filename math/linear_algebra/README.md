@@ -59,3 +59,6 @@ becomes
 matrix multiplication: https://www.mathsisfun.com/algebra/matrix-multiplying.html
 
 matrix multiplication is actually dot product
+## Task9
+
+getting columns from a matrix via numpy: https://stackoverflow.com/questions/8386675/extracting-specific-columns-in-numpy-array
