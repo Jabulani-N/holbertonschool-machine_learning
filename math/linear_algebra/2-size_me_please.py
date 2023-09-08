@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-# return the matrix's shape
-# this means if input is matrix,
-#   get it's length, append it to the first dimension
-#   if content of input is matrix, repeat above 2 lines
+
 def matrix_shape(matrix):
+    """ determines matrix shape.
+    Shape meaning it's length, and thength of internal arrays,"""
     thisDim = 0
     thisDepth = matrix
     shape_so_far = []
 
-    thisDim = len(matrix)
-    shape_so_far.append(thisDim)
     while isinstance(thisDepth[0], list) is True:
         thisDim = len(thisDepth)
         shape_so_far.append(thisDim)
-        thisDepth=thisDepth[0]
+        thisDepth = thisDepth[0]
+    # once more, for the lowest level containing no more lists
+    thisDim = len(matrix)
+    shape_so_far.append(thisDim)
     return shape_so_far
