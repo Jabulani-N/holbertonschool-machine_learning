@@ -17,6 +17,6 @@ def matrix_shape(matrix):
         shape_so_far.append(thisDim)
         thisDepth = thisDepth[0]
     # once more, for the lowest level containing no more lists
-    thisDim = len(matrix)
+    thisDim = len(thisDepth)
     shape_so_far.append(thisDim)
     return shape_so_far
