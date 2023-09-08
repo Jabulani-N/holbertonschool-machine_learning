@@ -53,3 +53,9 @@ For example:
 becomes
     0,2,4
     1,3,5
+
+## Task8 matrix multiplication
+
+matrix multiplication: https://www.mathsisfun.com/algebra/matrix-multiplying.html
+
+matrix multiplication is actually dot product
