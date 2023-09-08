@@ -25,7 +25,10 @@ def cat_matrices2D(mat1, mat2, axis=0):
         if len(mat1) != len(mat2):
             return None
         for row in range(len(mat1)):
-            if mat1[row] == [] or\
+            if mat1[row] == [] and\
+               mat2[row] != []:
+                return None
+            if mat1[row] != [] and\
                mat2[row] == []:
                 return None
             catRow = mat1[row] + mat2[row]
