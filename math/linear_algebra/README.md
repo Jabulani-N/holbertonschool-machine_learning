@@ -1,5 +1,8 @@
 # Linear Algebra
 
+**Be sure you give your python files appropriate permissions**
+
+ * [icacls](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/icacls)
 
 Installing Ubuntu 16.04 and Python 3.5
 
