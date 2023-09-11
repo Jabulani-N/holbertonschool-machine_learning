@@ -28,6 +28,7 @@ Installing numpy 1.15, scipy 1.3, and pycodestyle 2.5
     $ pip install --user scipy==1.3
     $ pip install --user pycodestyle==2.5
 
+* Should this numpy installation fail, consider a nonspecific `pip install numpy`, which may work for current tasks.
 To check that all have been successfully downloaded, use `pip list`.
 
 
