@@ -10,3 +10,6 @@ Answers must have a blank line at the end of file to be considered correct.
 ## Derivation Review
 
 [Lograrithm derivation](https://brilliant.org/wiki/derivative-of-logarithmic-functions/)
+
+* d/dx log(yx) = d/dx log(y) + d/dx log(x) [chain rule] = 0 + 1/x
+
