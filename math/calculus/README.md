@@ -21,3 +21,11 @@ Essentialy, when you derive something like `(sin(x))^k`, you do the derivative o
 
 * d/dx of xln(x) = ln(x) + 1, having chain ruled  the x*ln(x) by treating "ln(x)" as "k" in the usual derivation formulae, and then adding it to the derivation of x, 1. [citation needed]
 
+
+## Tasks
+
+### Task7
+
+do not let the second mathematical statement confuse you. it has vital information written in an intimidating way.
+
+* it is saying `d/dx y = 0` and `d/dy x = 0`. This is because if you are not deriving with respect to a given variable, you can treat that variable like a constant. It's what you'll see done with the "k" in derivation charts.
