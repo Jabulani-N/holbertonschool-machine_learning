@@ -12,7 +12,7 @@ def summation_i_squared(n):
         return None
 
     if n == 0:
-        return 0
+        return None
     if n < 0:
         return None
 
