@@ -19,3 +19,5 @@ Essentialy, when you derive something like `(sin(x))^k`, you do the derivative o
 
 * d/dx log(yx) = d/dx log(y) + d/dx log(x) [chain rule] = 0 + 1/x
 
+* d/dx of xln(x) = ln(x) + 1, having chain ruled  the x*ln(x) by treating "ln(x)" as "k" in the usual derivation formulae, and then adding it to the derivation of x, 1. [citation needed]
+
