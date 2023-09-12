@@ -25,6 +25,9 @@ Essentialy, when you derive something like `(sin(x))^k`, you do the derivative o
 
 * `d/dx e^kx = ke^kx`
 
+## Sums
+
+[Sums of Powers](https://en.wikipedia.org/wiki/List_of_mathematical_series#Sums_of_powers)
 
 ## Tasks
 
