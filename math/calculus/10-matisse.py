@@ -17,7 +17,7 @@ def poly_derivative(poly):
         return [0]
     derivedPoly = []
     poly.reverse()
-    for position in range(len(poly - 1)):
-        derivedPoly.append[poly[position] * (len(poly) - 1 - position)]
-
+    for position in range(len(poly) - 1):
+        derivedPoly.append(poly[position] * (len(poly) - 1 - position))
+    derivedPoly.reverse()
     return derivedPoly
