@@ -16,4 +16,7 @@ def poly_derivative(poly):
     if len(poly) == 1:
         return [0]
     derivedPoly = []
+    for position in range(len(poly - 1)):
+        derivedPoly.append[poly[position] * (len(poly) - 1 - position)]
 
+    return derivedPoly
