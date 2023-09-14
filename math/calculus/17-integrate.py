@@ -21,4 +21,6 @@ def poly_integral(poly, C=0):
     integratedPoly.insert(0,C)
     for position in range(len(poly) - 0):
         integratedPoly.append(poly[position] / (position + 1))
+        if integratedPoly[position + 1].is_integer() is True:
+            integratedPoly[position + 1] = int(integratedPoly[position + 1])
     return integratedPoly
