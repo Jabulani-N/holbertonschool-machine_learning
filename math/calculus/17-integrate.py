@@ -18,7 +18,7 @@ def poly_integral(poly, C=0):
     if len(poly) == 1:
         return [C, poly[0]]
     integratedPoly = []
-    poly.insert(0,C)
-    for position in range(len(poly) - 1):
-        integratedPoly.append()
+    integratedPoly.insert(0,C)
+    for position in range(len(poly) - 0):
+        integratedPoly.append(poly[position] / (position + 1))
     return integratedPoly
