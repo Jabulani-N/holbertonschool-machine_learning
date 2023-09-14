@@ -20,7 +20,7 @@ def poly_integral(poly, C=0):
     integratedPoly = []
     poly.reverse()
     for position in range(len(poly) - 1):
-        integratedPoly.append(poly[position] * (len(poly) - position))
+        integratedPoly.append(poly[position] / (len(poly) - position))
     integratedPoly.append(C)
     integratedPoly.reverse()
     return integratedPoly
