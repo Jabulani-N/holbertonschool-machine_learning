@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+"""this module coantains the poisson class"""
+
+
+def __init__(self, data=None, lambtha=1.):
+    """ represetns a poisson distribution
+    data is a list of the data to be used to estimate the distribution
+        I assume this is the source from which we
+        determine the "average" that poisson distribution requires
+    lambtha (float) is the expected number of occurences in a given time frame
+    If lambtha is not a positive value or equals to 0,
+        raise a ValueError with the message
+            'lambtha must be a positive value'
+    """
+    pass
