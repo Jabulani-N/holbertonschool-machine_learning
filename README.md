@@ -71,3 +71,7 @@ Create your first virtual machine:
 `$ vagrant init ubuntu/focal64` -> it will generate a Vagrantfile with `base = "ubuntu/focal64"` - you don’t have to execute this command line everyday, only once, to create a new virtual machine
 `$ vagrant up` -> it will start your virtual machine
 `$ vagrant ssh` -> now you are inside your virtual machine.
+
+# Other Resources
+
+* [NumPy User Guide](https://numpy.org/doc/stable/user/quickstart.html)
