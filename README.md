@@ -1,7 +1,6 @@
 # holbertonschool-machine_learning
-A Repository Implementing Machine Learning Techniques.
 
-It is recommended to complete the projects in this repository via virtual environment. As such, instructions on installing vagrant (virtual machine) are included below.
+A Repository Implementing Machine Learning Techniques.
 
 - [holbertonschool-machine\_learning](#holbertonschool-machine_learning)
 - [Using Vagrant on your personal computer](#using-vagrant-on-your-personal-computer)
@@ -9,6 +8,8 @@ It is recommended to complete the projects in this repository via virtual enviro
   - [Windows](#windows)
   - [Ubuntu](#ubuntu)
 - [Other Resources](#other-resources)
+
+It is recommended to complete the projects in this repository via virtual environment. As such, instructions on installing vagrant (virtual machine) are included below.
 
 # Using Vagrant on your personal computer
 
@@ -35,7 +36,7 @@ Open Terminal
 </p>
 * start your virtual machine: `$ vagrant up`
 
-image 2 goes here
+
 <p align="left">
     <details>
         <summary>Visual</summary>
@@ -45,7 +46,7 @@ image 2 goes here
 </p>
 * Enter your virtual machine: `$ vagrant ssh`
 
-image 3 goes here
+
 <p align="left">
     <details>
         <summary>Visual</summary>
@@ -67,7 +68,7 @@ Add the Ubuntu 20.04 (Focal) image to your box list via:
 * `vagrant box add ubuntu/focal64`
   * slow
   * [other image options](https://app.vagrantup.com/boxes/search)
-image 4 goes here
+
 <p align="left">
     <details>
         <summary>Visual</summary>
@@ -80,7 +81,7 @@ create your first vm: `vagrant init ubuntu/focal64`
 
 *  it will generate a Vagrantfile with base = "ubuntu/focal64" -you don’t have to execute this command line everyday, only once, to create a new virtual machine
 
-  image 5 goese here
+
   <p align="left">
     <details>
         <summary>Visual</summary>
@@ -93,7 +94,7 @@ create your first vm: `vagrant init ubuntu/focal64`
 
 start your vm: `vagrant up`
 
-image 6 goes here
+
 <p align="left">
     <details>
         <summary>Visual</summary>
@@ -104,7 +105,7 @@ image 6 goes here
 
 enter your vm: `vagrant ssh`
 
-image 7 goes here
+
 <p align="left">
     <details>
         <summary>Visual</summary>
