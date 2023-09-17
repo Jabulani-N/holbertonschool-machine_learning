@@ -8,8 +8,15 @@ def __init__(self, data=None, lambtha=1.):
         I assume this is the source from which we
         determine the "average" that poisson distribution requires
     lambtha (float) is the expected number of occurences in a given time frame
+
     If lambtha is not a positive value or equals to 0,
         raise a ValueError with the message
             'lambtha must be a positive value'
+    If data is not given,
+        skip calculations and assume the average is lambtha
+    If data is not a list,
+        raise a TypeError with the message data must be a list
+    If data does not contain at least two data points,
+        raise a ValueError with the message data must contain multiple values
     """
     pass
