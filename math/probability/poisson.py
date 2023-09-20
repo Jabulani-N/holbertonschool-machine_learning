@@ -57,7 +57,9 @@ class Poisson:
         if kInt > 0:
             for num in range(1, kInt + 1):
                 kFact *= num
-        if kInt <= 0:
+        if kInt < 0:
+            return 0
+        if kInt == 0:
             probability = (e ** (-1 * self.lambtha)) * self.lambtha
         else:
             probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** kInt)\
