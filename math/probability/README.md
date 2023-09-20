@@ -14,3 +14,5 @@
 ### Task0
 
 * [finding lambda](https://www.youtube.com/watch?v=AS0cLTiVrRY)
+
+* [numpy.random.poisson](https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.random.poisson.html)
