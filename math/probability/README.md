@@ -20,4 +20,4 @@
 
 ### Task1
 
-use piosson distribution to calculate p of a given mu (lambtha in this project's code)
+Use [piosson distribution](#resources) to calculate p of a given mu (lambtha in this project's code)
