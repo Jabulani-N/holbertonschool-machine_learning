@@ -54,6 +54,8 @@ class Poisson:
             k = int(k)
 
             if k == 0:
+                probability = (e ** (-1 * self.lambtha)) * self.lambtha
+            else:
                 probability = 
 
             if probability >= 0:
