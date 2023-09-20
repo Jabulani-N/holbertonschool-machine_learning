@@ -32,10 +32,10 @@ class Poisson:
         if isinstance(data, list) is False and\
              data is not None:
             raise TypeError("data must be a list")
-        elif len(data) < 2:
+        elif isinstance(data, list) and\
+             len(data) < 2:
             raise ValueError("data must contain multiple values")
-        # we do not use else below, because
-        # data == none, lambtha = 1. (no data given) is valid
-        self.lambtha = (sum(data / len(data)))  # assuming lambtha is average
+        elif data is not None:
+            self.lambtha = (sum(data) / len(data))  # assuming lambtha is average
 
 
