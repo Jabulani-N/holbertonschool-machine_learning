@@ -5,6 +5,7 @@
   - [Tasks](#tasks)
     - [Task0](#task0)
     - [Task1](#task1)
+    - [Task2](#task2)
 
 ## Resources
 
@@ -21,3 +22,10 @@
 ### Task1
 
 Use [piosson distribution](#resources) to calculate p of a given mu (lambtha in this project's code)
+
+
+### Task2
+
+Poisson CDF refers the the probability of "at most" x value. Contrast with PDF (proabability of exactly) that was used in task1
+
+* for example, the CDF of 3 is equal to the PDF of 3 + PDF of 2 + PDF of 1 + PDF of 0
