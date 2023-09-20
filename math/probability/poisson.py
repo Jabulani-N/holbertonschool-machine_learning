@@ -77,4 +77,7 @@ class Poisson:
             return 0
         if k is not int, convert to int
         """
-        pass
+        probability = 0
+        for num in range(0, k + 1):
+            probability += self.pmf(k)
+        return probability
