@@ -41,3 +41,6 @@ class Poisson:
                 ValueError("data must contain multiple values")
         elif data is not None:
             self.lambtha = (sum(data) / len(data))  # lambtha is average
+
+        def pmf(self, k):
+            pass
