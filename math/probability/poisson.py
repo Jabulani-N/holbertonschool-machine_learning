@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """this module coantains the poisson class"""
 
+
 class Poisson:
     """represents poisson distribution of data"""
 
     def __init__(self, data=None, lambtha=1.):
         """ represetns a poisson distribution
         data is a list of integers, data is used to estimate the distribution
-            I assume this is the source from which we
+            I assume this the source from which we
             determine the "average" that poisson distribution requires
-        lambtha (float) is the expected number of occurences in a given time frame
+        lambtha (float) is expected number of occurences in a given time frame
             it seems like this means 'average'
 
         If lambtha is not a positive value or equals to 0,
@@ -18,9 +19,9 @@ class Poisson:
         If data is not given,
             skip calculations and assume the average is lambtha
         If data is not a list,
-            raise a TypeError with the message data must be a list
+            raise a TypeError with message data must be a list
         If data does not contain at least two data points,
-            raise a ValueError with the message data must contain multiple values
+            raise ValueError with message data must contain multiple values
 
             If data DOES exist
                 it will replace lambtha with a calculated lambtha
@@ -32,12 +33,11 @@ class Poisson:
             self.lambtha = float(lambtha)
 
         if isinstance(data, list) is False and\
-             data is not None:
+                data is not None:
             raise TypeError("data must be a list")
         elif isinstance(data, list) and\
-             len(data) < 2:
-            raise ValueError("data must contain multiple values")
+                len(data) < 2:
+            raise\
+                ValueError("data must contain multiple values")
         elif data is not None:
-            self.lambtha = (sum(data) / len(data))  # assuming lambtha is average
-
-
+            self.lambtha = (sum(data) / len(data))  # lambtha is average
