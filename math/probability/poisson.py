@@ -2,6 +2,8 @@
 """this module coantains the poisson class"""
 
 class Poisson:
+    """represents poisson distribution of data"""
+
     def __init__(self, data=None, lambtha=1.):
         """ represetns a poisson distribution
         data is a list of integers, data is used to estimate the distribution
