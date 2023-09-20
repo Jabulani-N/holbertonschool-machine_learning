@@ -45,8 +45,18 @@ class Poisson:
         def pmf(self, k):
             """return p (pmf) for a given number of successes
             lambtha is used for mu in poisson dist.
-            if k is out of range (negative probability?)
+            if k is out of range (negative p?)
                 return 0
+            if k is not int, convert to int
             """
             e = 2.7182818285
-            p = 0
+            probability = 0
+            k = int(k)
+
+            if k == 0:
+                probability = 
+
+            if probability >= 0:
+                return probability
+            else:
+                return 0
