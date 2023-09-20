@@ -69,7 +69,6 @@ class Poisson:
         else:
             return 0
 
-
     def cdf(self, k):
         """return CDF for a given number of successes
         lambtha is used for mu in poisson dist.
