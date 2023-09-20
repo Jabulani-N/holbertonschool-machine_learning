@@ -26,6 +26,7 @@ class Poisson:
             If data DOES exist
                 it will replace lambtha with a calculated lambtha
         """
+        self.pmf = 0
         # consider a check for forcing lambtha to be a number (int/flaot)
         if lambtha <= 0:
             raise ValueError("lambtha must be a positive value")
@@ -61,9 +62,12 @@ class Poisson:
             if k <= 0:
                 probability = (e ** (-1 * self.lambtha)) * self.lambtha
             else:
-                probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** k) / kfact
+                probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** k)\
+                                    / kfact
 
             if probability >= 0:
+                self.pmf = probability
                 return probability
             else:
+                self.pmf = 0
                 return 0
