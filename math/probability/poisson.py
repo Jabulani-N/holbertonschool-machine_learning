@@ -23,16 +23,19 @@ class Poisson:
             If data DOES exist
                 it will replace lambtha with a calculated lambtha
         """
-        if  data == None:
-            if lambtha <= 0:
-                raise ValueError("lambtha must be a positive value")
-            else:
-                self.lambtha = lambtha
-        elif isinstance(data, list) is False:
+        # consider a check for forcing lambtha to be a number (int/flaot)
+        if lambtha <= 0:
+            raise ValueError("lambtha must be a positive value")
+        else:
+            self.lambtha = float(lambtha)
+
+        if isinstance(data, list) is False and\
+             data is not None:
             raise TypeError("data must be a list")
         elif len(data) < 2:
             raise ValueError("data must contain multiple values")
-        # we do not use else here, because
+        # we do not use else below, because
         # data == none, lambtha = 1. (no data given) is valid
+        self.lambtha = (sum(data / len(data)))  # assuming lambtha is average
 
 
