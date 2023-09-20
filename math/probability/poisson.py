@@ -26,7 +26,6 @@ class Poisson:
             If data DOES exist
                 it will replace lambtha with a calculated lambtha
         """
-        self.pmf = 0
         # consider a check for forcing lambtha to be a number (int/flaot)
         if lambtha <= 0:
             raise ValueError("lambtha must be a positive value")
@@ -43,31 +42,27 @@ class Poisson:
         elif data is not None:
             self.lambtha = (sum(data) / len(data))  # lambtha is average
 
-        def pmf(self, k):
-            """return p (pmf) for a given number of successes
-            lambtha is used for mu in poisson dist.
-            k is used for x in poisson dist.
-            if k is out of range (negative p?)
-                return 0
-            if k is not int, convert to int
-            """
-            e = 2.7182818285
-            probability = 0
-            k = int(k)
-            kfact = 1
-            if k > 0:
-                for num in range(1, k + 1):
-                    kfact *= num
-
-            if k <= 0:
-                probability = (e ** (-1 * self.lambtha)) * self.lambtha
-            else:
-                probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** k)\
-                                    / kfact
-
-            if probability >= 0:
-                self.pmf = probability
-                return probability
-            else:
-                self.pmf = 0
-                return 0
+    def pmf(self, k):
+        """return p (pmf) for a given number of successes
+        lambtha is used for mu in poisson dist.
+        k is used for x in poisson dist.
+        if k is out of range (negative p?)
+            return 0
+        if k is not int, convert to int
+        """
+        e = 2.7182818285
+        probability = 0
+        kInt = int(k)
+        kFact = 1
+        if kInt > 0:
+            for num in range(1, kInt + 1):
+                kFact *= num
+        if kInt <= 0:
+            probability = (e ** (-1 * self.lambtha)) * self.lambtha
+        else:
+            probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** kInt)\
+                                / kFact
+        if probability >= 0:
+            return probability
+        else:
+            return 0
