@@ -43,4 +43,10 @@ class Poisson:
             self.lambtha = (sum(data) / len(data))  # lambtha is average
 
         def pmf(self, k):
-            pass
+            """return p (pmf) for a given number of successes
+            lambtha is used for mu in poisson dist.
+            if k is out of range (negative probability?)
+                return 0
+            """
+            e = 2.7182818285
+            p = 0
