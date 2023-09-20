@@ -68,3 +68,14 @@ class Poisson:
             return probability
         else:
             return 0
+
+
+    def cdf(self, k):
+        """return CDF for a given number of successes
+        lambtha is used for mu in poisson dist.
+        k is used for number of successes
+        if k is out of range (negative p?)
+            return 0
+        if k is not int, convert to int
+        """
+        pass
