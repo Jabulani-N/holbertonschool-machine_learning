@@ -33,5 +33,5 @@ class Normal:
                            / len(xMinusxBarSquared)) ** 0.5
 
     def z_score(self, x):
-        """calculates z-score of a given x"""
-        pass
+        """calculates and returns z-score of a given x"""
+        return (x - self.mean) / self.stddev
