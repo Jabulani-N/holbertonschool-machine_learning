@@ -63,3 +63,9 @@ matrix multiplication is actually dot product
 ## Task9
 
 getting columns from a matrix via numpy: https://stackoverflow.com/questions/8386675/extracting-specific-columns-in-numpy-array
+
+## Task10
+
+you can use numpy-specific properties.
+
+* [Transpose](https://numpy.org/doc/stable/reference/generated/numpy.matrix.T.html)
