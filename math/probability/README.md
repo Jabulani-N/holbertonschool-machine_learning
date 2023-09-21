@@ -52,6 +52,7 @@ cumulative exponential distribution formula can be found [here](https://www.stat
 
 In most resources:
 * σ is standard deviation
+* σ^2 is variance
 * μ is mean
 * x is data point in question
 * z is z-score
