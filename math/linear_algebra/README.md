@@ -76,3 +76,8 @@ see https://numpy.org/doc/stable/reference/generated/numpy.add.html
 
 `numpy.add(matrix1, matrix2)`
 * also works on loose integers
+
+
+## Taskl3
+
+numpy matrix concatenation: https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html#numpy-concatenate
