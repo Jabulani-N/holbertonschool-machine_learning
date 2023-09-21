@@ -25,6 +25,8 @@ class Normal:
             self.mean = (sum(data) / len(data))  # mean is average
             # calculate standard deviation (square root of variance)
             xMinusxBar = []
+            xMinusxBarSquared = []
             for index in range(0, len(data)):
-                xMinusxBar.append(data(index) - self.mean)
-            self.stddev = (sum((xMinusxBar ** 2) / len(xMinusxBar))) ** 0.5
+                xMinusxBar.append(data[index] - self.mean)
+                xMinusxBarSquared.append(xMinusxBar[index])
+            self.stddev = (sum((xMinusxBarSquared)) / len(xMinusxBarSquared)) ** 0.5
