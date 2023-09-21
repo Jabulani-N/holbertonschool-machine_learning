@@ -81,3 +81,7 @@ see https://numpy.org/doc/stable/reference/generated/numpy.add.html
 ## Taskl3
 
 numpy matrix concatenation: https://numpy.org/doc/stable/reference/generated/numpy.concatenate.html#numpy-concatenate
+
+## Task14
+
+numpy matrix multiplication: https://numpy.org/doc/stable/reference/generated/numpy.matmul.html
