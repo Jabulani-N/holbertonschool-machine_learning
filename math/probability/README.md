@@ -49,3 +49,9 @@ cumulative exponential distribution formula can be found [here](https://www.stat
 ### Task8
 
 [z-score](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/z-scores/a/z-scores-review)
+
+In most resources:
+* σ is standard deviation
+* μ is mean
+* x is data point in question
+* z is z-score
