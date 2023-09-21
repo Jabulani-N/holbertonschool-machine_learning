@@ -39,3 +39,6 @@ class Exponential:
                 ValueError("data must contain multiple values")
         elif data is not None:
             self.lambtha = 1 / (sum(data) / len(data))  # lambtha = 1 / average
+
+    def pdf(self, x):
+        pass
