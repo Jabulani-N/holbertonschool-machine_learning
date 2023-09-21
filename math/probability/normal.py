@@ -31,3 +31,7 @@ class Normal:
                 xMinusxBarSquared.append(xMinusxBar[index] ** 2)
             self.stddev = (sum((xMinusxBarSquared))
                            / len(xMinusxBarSquared)) ** 0.5
+
+    def z_score(self, x):
+        """calculates z-score of a given x"""
+        pass

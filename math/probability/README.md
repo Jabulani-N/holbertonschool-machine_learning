@@ -8,6 +8,7 @@
     - [Task2 (code is incomplete)](#task2-code-is-incomplete)
     - [Task3,4](#task34)
     - [Task5](#task5)
+    - [Task8](#task8)
 
 ## Resources
 
@@ -44,3 +45,7 @@ x represents the time, so it must be higher than 0 to have any probability above
 ### Task5
 
 cumulative exponential distribution formula can be found [here](https://www.statology.org/exponential-distribution/)
+
+### Task8
+
+[z-score](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data/z-scores/a/z-scores-review)
