@@ -1,3 +1,5 @@
 #!/usr/bin/env python3
 """documentation"""
-return (0, 0)
+
+def np_shape(matrix):
+    return (0, 0)
