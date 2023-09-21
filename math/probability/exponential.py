@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """this module coantains the exponential class"""
-
+e = 2.7182818285
+pi = 3.1415926536
 
 class Exponential:
     """represents exponential distribution of data
@@ -46,4 +47,6 @@ class Exponential:
         Returns the PDF value for x
         If x is out of range, return 0
         """
-        pass
+        if x <= 0:
+            return 0
+        return self.lambtha * e ** (-1 * self.lambtha * x)
