@@ -23,3 +23,8 @@ class Normal:
                 ValueError("data must contain multiple values")
         elif data is not None:
             self.mean = (sum(data) / len(data))  # mean is average
+            # calculate standard deviation (square root of variance)
+            xMinusxBar = []
+            for index in range(0, len(data)):
+                xMinusxBar.append(data(index) - self.mean)
+            self.stddev = (sum((xMinusxBar ** 2) / len(xMinusxBar))) ** 0.5
