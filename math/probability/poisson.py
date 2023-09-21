@@ -79,6 +79,6 @@ class Poisson:
         """
         probability = 0
         kInt = int(k)
-        for num in range(0, kInt + 1):
+        for num in range(1, kInt + 1):
             probability += self.pmf(num)
         return probability
