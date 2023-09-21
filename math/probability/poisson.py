@@ -77,12 +77,12 @@ class Poisson:
             return 0
         if k is not int, convert to int
         """
-        if k <= 0:
+        kInt = int(k)
+        if kInt <= 0:
             return 0
         e = 2.7182818285
         probability = 0
 
-        kInt = int(k)
         for num in range(1, kInt + 1):
             probability += self.pmf(num)
         return probability
