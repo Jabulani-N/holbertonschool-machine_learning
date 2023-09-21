@@ -47,7 +47,17 @@ class Exponential:
         x is the time period
         Returns the PDF value for x
         If x is out of range, return 0
+        0 is not a special case
         """
         if x < 0:
             return 0
         return self.lambtha * e ** (-1 * self.lambtha * x)
+
+    def cdf(self, x):
+        """ sum of values up to x"""
+        if x < 0:
+            return 0
+        total = 0
+        for num in range(1, x):
+            total += self.pdf(num)
+        return total
