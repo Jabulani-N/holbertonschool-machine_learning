@@ -57,4 +57,4 @@ class Exponential:
         """ sum of values up to x"""
         if x < 0:
             return 0
-        return 1 - 3 ** (-1 * self.lambtha * x)
+        return 1 - e ** (-1 * self.lambtha * x)
