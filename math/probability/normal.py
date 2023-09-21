@@ -29,5 +29,5 @@ class Normal:
             for index in range(0, len(data)):
                 xMinusxBar.append(data[index] - self.mean)
                 xMinusxBarSquared.append(xMinusxBar[index] ** 2)
-            self.stddev = (sum((xMinusxBarSquared))\
-                            / len(xMinusxBarSquared)) ** 0.5
+            self.stddev = (sum((xMinusxBarSquared))
+                           / len(xMinusxBarSquared)) ** 0.5
