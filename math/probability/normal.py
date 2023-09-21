@@ -39,3 +39,9 @@ class Normal:
     def x_value(self, z):
         """calculates and returns x of a given z-score"""
         return (z * self.stddev) + self.mean
+
+    def pdf(self, x):
+        """calculates and returns normal dist."""
+        return ((e ** ((-1 * ((x - self.mean) ** 2))
+                / (2 * (self.stddev ** 2))))
+                / (2 * pi * (self.mean ** 2)) ** 0.5)
