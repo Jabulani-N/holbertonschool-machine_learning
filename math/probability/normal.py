@@ -49,3 +49,7 @@ class Normal:
                     / (2 * (self.stddev ** 2))))
             * self.stddev * ((2 * pi) ** 0.5)
                     )
+
+    def cdf(self, x):
+        """ calculates and returns cdf of normal dist."""
+        pass
