@@ -42,6 +42,10 @@ class Normal:
 
     def pdf(self, x):
         """calculates and returns normal dist."""
-        return ((e ** ((-1 * ((x - self.mean) ** 2))
-                / (2 * (self.stddev ** 2))))
-                / (2 * pi * (self.mean ** 2)) ** 0.5)
+
+        return 1 / (
+            (e **
+                (((x - self.mean) ** 2)
+                    / (2 * (self.stddev ** 2))))
+            * self.stddev * ((2 * pi) ** 0.5)
+                    )
