@@ -41,4 +41,9 @@ class Exponential:
             self.lambtha = 1 / (sum(data) / len(data))  # lambtha = 1 / average
 
     def pdf(self, x):
+        """Calculates value of the PDF for a given time period
+        x is the time period
+        Returns the PDF value for x
+        If x is out of range, return 0
+        """
         pass
