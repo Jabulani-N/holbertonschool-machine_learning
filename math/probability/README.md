@@ -6,7 +6,8 @@
     - [Task0](#task0)
     - [Task1](#task1)
     - [Task2 (code is incomplete)](#task2-code-is-incomplete)
-    - [Task3](#task3)
+    - [Task3,4](#task34)
+    - [Task5](#task5)
 
 ## Resources
 
@@ -33,10 +34,13 @@ Use [piosson distribution](#resources) to calculate p of a given mu (lambtha in 
 
 [formula](https://en.wikipedia.org/wiki/Poisson_distribution): `e^(-λ) * Σ(j=0, [k]) λ^j / j!`
 
-### Task3
+### Task3,4
 
 [exponential distribution](https://byjus.com/maths/exponential-distribution/) uses `lambda = 1/average` in it's formulae.
 
 x represents the time, so it must be higher than 0 to have any probability above 0.
 * in this task, **0 must not be considered a special case**. It will instead return an impossible probability value.
 
+### Task5
+
+cumulative exponential distribution formula can be found [here](https://www.statology.org/exponential-distribution/)

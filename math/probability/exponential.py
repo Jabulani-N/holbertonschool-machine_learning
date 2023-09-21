@@ -57,7 +57,4 @@ class Exponential:
         """ sum of values up to x"""
         if x < 0:
             return 0
-        total = 0
-        for num in range(1, x):
-            total += self.pdf(num)
-        return total
+        return 1 - 3 ** (-1 * self.lambtha * x)
