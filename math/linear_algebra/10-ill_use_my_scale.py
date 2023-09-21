@@ -2,4 +2,5 @@
 """documentation"""
 
 def np_shape(matrix):
+    """function documentation"""
     return (0, 0)
