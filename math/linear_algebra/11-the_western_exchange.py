@@ -3,5 +3,5 @@
 
 
 def np_transpose(matrix):
-    """funciton documentation"""
-    return []
+    """utilizes numpy matrix transpse property"""
+    return matrix.T
