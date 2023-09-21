@@ -48,6 +48,6 @@ class Exponential:
         Returns the PDF value for x
         If x is out of range, return 0
         """
-        if x <= 0:
+        if x < 0:
             return 0
         return self.lambtha * e ** (-1 * self.lambtha * x)
