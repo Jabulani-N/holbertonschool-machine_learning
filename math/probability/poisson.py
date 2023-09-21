@@ -77,6 +77,8 @@ class Poisson:
             return 0
         if k is not int, convert to int
         """
+        if k <= 0:
+            return 0
         e = 2.7182818285
         probability = 0
         kInt = int(k)
