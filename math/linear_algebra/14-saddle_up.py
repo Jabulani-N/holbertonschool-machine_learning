@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""documentation"""
+"""import is permitted"""
+import numpy as np
 
 
 def np_matmul(mat1, mat2):
-    """placeholder function documentation"""
+    """performs matrix multiplication"""
     pass
