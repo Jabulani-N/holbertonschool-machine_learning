@@ -26,6 +26,8 @@ Use [piosson distribution](#resources) to calculate p of a given mu (lambtha in 
 
 ### Task2
 
-Poisson CDF refers the the probability of "at most" x value. Contrast with PDF (proabability of exactly) that was used in task1
+[Poisson CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function) refers the the probability of "at most" x value. Contrast with PDF (proabability of exactly) that was used in task1
 
 * for example, the CDF of 3 is equal to the PDF of 3 + PDF of 2 + PDF of 1 + PDF of 0
+
+[formula](https://en.wikipedia.org/wiki/Poisson_distribution): `e^(-λ) * Σ(j=0, [k]) λ^j / j!`
