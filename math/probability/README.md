@@ -38,3 +38,5 @@ Use [piosson distribution](#resources) to calculate p of a given mu (lambtha in 
 [exponential distribution](https://byjus.com/maths/exponential-distribution/) uses `lambda = 1/average` in it's formulae.
 
 x represents the time, so it must be higher than 0 to have any probability above 0.
+* in this task, **0 must not be considered a special case**. It will instead return an impossible probability value.
+
