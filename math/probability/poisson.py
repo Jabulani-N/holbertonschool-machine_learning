@@ -81,6 +81,7 @@ class Poisson:
             return 0
         e = 2.7182818285
         probability = 0
+
         kInt = int(k)
         for num in range(1, kInt + 1):
             probability += self.pmf(num)
@@ -95,4 +96,4 @@ class Poisson:
         #     # print("probability is currently ", probability)
         #     numFact = 1
         # probability *= e ** (-1 * self.lambtha)
-        return probability
+        # return probability
