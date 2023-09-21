@@ -3,6 +3,7 @@
 e = 2.7182818285
 pi = 3.1415926536
 
+
 class Exponential:
     """represents exponential distribution of data
     data is a list of integers, data is used to estimate the distribution
