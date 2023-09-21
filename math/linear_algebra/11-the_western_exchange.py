@@ -1,3 +1,7 @@
 #!/usr/bin/env python3
 """documentation"""
-pass
+
+
+def np_transpose(matrix):
+    """funciton documentation"""
+    return []
