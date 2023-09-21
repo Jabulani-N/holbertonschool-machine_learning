@@ -1,2 +1,3 @@
 #!/usr/bin/env python3
-pass
+"""documentation"""
+return (0, 0)
