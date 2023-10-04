@@ -24,4 +24,5 @@ class Neuron:
                 Upon instantiation,
                     initialized to 0
         """
-        pass
+        # put nx checks nx here so it doesn't start if invalid
+        self.b = 0
