@@ -42,6 +42,12 @@ class Poisson:
         elif data is not None:
             self.lambtha = (sum(data) / len(data))  # lambtha is average
 
+    def factorial(self,k):
+        fact = 1
+        for i in range(1, k+1):
+            fact*=i
+        return fact
+
     def pmf(self, k):
         """return p (pmf) for a given number of successes
         lambtha is used for mu in poisson dist.
@@ -51,23 +57,9 @@ class Poisson:
         if k is not int, convert to int
         """
         e = 2.7182818285
-        probability = 0
-        kInt = int(k)
-        kFact = 1
-        if kInt > 0:
-            for num in range(1, kInt + 1):
-                kFact *= num
-        if kInt < 0:
+        if k<0:
             return 0
-        if kInt == 0:
-            probability = (e ** (-1 * self.lambtha)) * self.lambtha
-        else:
-            probability = ((e ** (-1 * self.lambtha)) * self.lambtha ** kInt)\
-                                / kFact
-        if probability >= 0:
-            return probability
-        else:
-            return 0
+        return ((e** -self.lambtha) * self.lambtha ** k) /(self.factorial(k))
 
     def cdf(self, k):
         """return CDF for a given number of successes
@@ -78,12 +70,11 @@ class Poisson:
         if k is not int, convert to int
         """
         kInt = int(k)
-        if kInt <= 0:
+        if kInt < 0:
             return 0
-        e = 2.7182818285
         probability = 0
 
-        for num in range(1, kInt + 1):
+        for num in range(0, kInt + 1):
             probability += self.pmf(num)
         return probability
 
