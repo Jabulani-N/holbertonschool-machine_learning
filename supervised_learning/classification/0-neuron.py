@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """contains class Neuron"""
 
+
+import numpy as np
+
+
 class Neuron:
     """performs binary classification"""
 
@@ -29,3 +33,7 @@ class Neuron:
         if nx < 1:
             raise ValueError("nx must be a positive integer")
         self.b = 0
+        self.A = 0
+
+        Winit = 0  # needs to be a normal distribution
+        # we did a normal dist in a previous assignment
