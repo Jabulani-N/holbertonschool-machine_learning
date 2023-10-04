@@ -24,5 +24,8 @@ class Neuron:
                 Upon instantiation,
                     initialized to 0
         """
-        # put nx checks nx here so it doesn't start if invalid
+        if isinstance(nx, int) is False:
+            raise TypeError("nx must be an integer")
+        if nx < 1:
+            raise ValueError("nx must be a positive integer")
         self.b = 0
