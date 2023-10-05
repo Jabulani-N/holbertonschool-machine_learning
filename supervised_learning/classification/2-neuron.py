@@ -63,9 +63,10 @@ class Neuron:
         Returns the private attribute __A
         """
         # I need to multiply everything in X array by the weight
-        # weight is self.W(); add bias after doing sigmoid
+        # weight is self.W()
         weighted_X = 0
-        self.__A = (self.sigmoid(X) * self.W())
+        # above is where I need to multiply x by wieghts
+        self.__A = (self.sigmoid(weighted_X) + self.b())
         return self.A()
 
     def sigmoid(self, x):
