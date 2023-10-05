@@ -90,6 +90,6 @@ class Neuron:
         m = Y.shape[1]
         # need to multiple -1/m by sum
         loss = (-1 / m) * np.sum(Y *
-                                 np.log(A) + ((1.0000001 - A) *
+                                 np.log(A) + ((1 - Y) *
                                               np.log(1.0000001 - A)))
         return loss
