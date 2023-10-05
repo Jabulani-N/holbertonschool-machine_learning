@@ -107,5 +107,6 @@ class Neuron:
         """
         # expect to use np.where
         A = self.forward_prop(X)
+        prediction = np.where(A >= 0.5, 1, 0)
         loss = self.cost(Y, A)
-        return self.__A, loss
+        return prediction, loss
