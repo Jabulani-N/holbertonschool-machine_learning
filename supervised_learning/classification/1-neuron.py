@@ -18,13 +18,13 @@ class Neuron:
                 nx must be a positive integer
 
         private instance attributes:
-            _W: The weights vector for the neuron
+            __W: The weights vector for the neuron
                 Upon instantiation,
                     initialized using a random normal distribution
-            _b: The bias for the neuron
+            __b: The bias for the neuron
                 Upon instantiation,
                     initialized to 0
-            _A: The activated output of the neuron (prediction).
+            __A: The activated output of the neuron (prediction).
                 Upon instantiation,
                     initialized to 0
         """
@@ -32,18 +32,21 @@ class Neuron:
             raise TypeError("nx must be an integer")
         if nx < 1:
             raise ValueError("nx must be a positive integer")
-        self._b = 0
-        self._A = 0
-        self._W = np.random.normal(size=(1, nx))
+        self.__b = 0
+        self.__A = 0
+        self.__W = np.random.normal(size=(1, nx))
 
+    @property
     def W(self):
         """getter"""
-        return self._W
+        return self.__W
 
+    @property
     def b(self):
         """getter"""
-        return self._b
+        return self.__b
 
+    @property
     def A(self):
         """getter"""
-        return self._A
+        return self.__A
