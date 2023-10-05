@@ -10,3 +10,7 @@ numpy normal distribution: https://numpy.org/doc/stable/reference/random/generat
 ### Task 2
 
 remember that getters require the `@property` tag.
+
+sigmoid function: https://en.wikipedia.org/wiki/Sigmoid_function
+
+`numpy.exp(exponent)` returns e^exponent

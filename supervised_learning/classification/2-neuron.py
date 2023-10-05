@@ -62,4 +62,5 @@ class Neuron:
 
         Returns the private attribute __A
         """
+        self.__A = (X * self.W())
         return self.A()
