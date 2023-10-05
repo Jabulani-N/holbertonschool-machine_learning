@@ -64,3 +64,8 @@ class Neuron:
         """
         self.__A = (X * self.W())
         return self.A()
+
+    def sigmoid(x):
+        """sigmoid function used in propagation"""
+        sig = 1 / (1 + np.exp(-1 * x))
+        return sig
