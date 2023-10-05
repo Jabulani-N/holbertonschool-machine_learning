@@ -62,4 +62,34 @@ class Neuron:
 
         Returns the private attribute __A
         """
-        pass
+        # I need to multiply everything in X array by the weight
+        # weight is self.W()
+        # weighted_X = X * 1
+        # above is where I need to multiply x by wieghts
+        self.__A = self.sigmoid(np.matmul(self.__W, X) + self.__b)
+        return self.__A
+
+    def sigmoid(self, x):
+        """sigmoid function used in propagation"""
+        sig = 1 / (1 + np.exp(-1 * x))
+        return sig
+
+    def cost(self, Y, A):
+        """determines cost
+        uses
+            1.0000001 - A
+        anytime there would otherwise be a
+            1 - A
+        Y is numpy.ndarray
+            with shape (1, m)
+            contains the correct labels for the input data
+        A is a numpy.ndarray
+            with shape (1, m)
+            containing the activated output of the neuron for each example
+        """
+        m = len(Y)
+        # need to multiple -1/m by sum
+        loss = (-1 / m) * np.sum(Y *
+                                 np.log(A) + ((1.0000001 - A) *
+                                              np.log(1.0000001 - A)))
+        return loss
