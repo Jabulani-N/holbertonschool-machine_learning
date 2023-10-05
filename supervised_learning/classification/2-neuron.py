@@ -64,9 +64,9 @@ class Neuron:
         """
         # I need to multiply everything in X array by the weight
         # weight is self.W()
-        weighted_X = 0
+        # weighted_X = X * 1
         # above is where I need to multiply x by wieghts
-        self.__A = (self.sigmoid(weighted_X) + self.b())
+        self.__A = self.sigmoid(X)
         return self.A()
 
     def sigmoid(self, x):
