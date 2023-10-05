@@ -36,3 +36,15 @@ class Neuron:
         self._A = 0
 
         self._W = np.random.normal(size=(1, nx))
+
+    def W(self):
+        """getter"""
+        return self._W
+
+    def b(self):
+        """getter"""
+        return self._b
+
+    def A(self):
+        """getter"""
+        return self._A
