@@ -35,5 +35,5 @@ class Neuron:
         self.b = 0
         self.A = 0
 
-        self.W = np.random.normal(size =(1, nx))
+        self.W = np.random.normal(size=(1, nx))
         # we did a normal dist in a previous assignment
