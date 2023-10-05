@@ -66,7 +66,7 @@ class Neuron:
         # weight is self.W()
         # weighted_X = X * 1
         # above is where I need to multiply x by wieghts
-        self.__A = self.sigmoid(X)
+        self.__A = self.sigmoid(np.matmul(self.__W, X) + self.__b)
         return self.A()
 
     def sigmoid(self, x):
