@@ -9,4 +9,4 @@ numpy normal distribution: https://numpy.org/doc/stable/reference/random/generat
 
 ### Task 2
 
-remember that getters require the `@property` tag
+remember that getters require the `@property` tag.
