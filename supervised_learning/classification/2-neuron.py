@@ -62,4 +62,4 @@ class Neuron:
 
         Returns the private attribute __A
         """
-        pass
+        return self.A()
