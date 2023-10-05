@@ -59,7 +59,7 @@ class Neuron:
 
         Updates the private attribute __A
             The neuron should use a sigmoid activation function
-        
+
         Returns the private attribute __A
         """
         pass
